@@ -1,0 +1,42 @@
+opam-version: "2.0"
+name: "jsexplain"
+version: "0.1"
+maintainer: "Thomas Wood <thomas.wood09@imperial.ac.uk>"
+authors: [
+  "Arthur Charguéraud <arthur@chargueraud.org>"
+  "Alan Schmitt <alan.schmitt@inria.fr>"
+  "Thomas Wood <thomas.wood09@imperial.ac.uk>"
+]
+homepage: "http://jscert.org/"
+bug-reports: "https://github.com/jscert/jsexplain/issues"
+license: "BSD 3-clause"
+dev-repo: "git+https://github.com/jscert/jsexplain.git"
+
+build: [
+       ["autoconf"]
+       ["./configure" "-prefix" "%{prefix}%"]
+       [make]
+]
+install: [
+         [make "opam_install"]
+]
+remove: [
+        ["autoconf"]
+        ["./configure" "-prefix" "%{prefix}%"]
+	[make "clean"]
+]
+depends: [
+  "ocamlfind"
+  "alcotest"
+  "conf-autoconf"
+  "fjs_of_fml"
+  "ocaml" {>= "4.04.0" &  < "4.05"}
+]
+pin-depends: [
+ ["JS_Parser.dev" "git://github.com/resource-reasoning/JS_Parser.git#v0.1.0"]
+]
+url {
+ src : "https://people.irisa.fr/Samuel.Risbourg/opam/jsexplain/jsexplain.0.1/jsexplain-0.1.tar.gz"
+ checksum: "md5=168be54359b476cea6bc3d616ba52f1a"
+}
+
