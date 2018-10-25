@@ -31,7 +31,7 @@ depends: [
   "ocaml" {>= "4.04.0" &  < "4.05"}
 ]
 url {
- src : "https://github.com/jscert/fjs_of_fml/blob/opam/archive/fjs_of_fml-0.1.tar.gz"
+ src : "https://github.com/jscert/fjs_of_fml/archive/fjs_of_fml-0.1.tar.gz"
  checksum: "md5=b0cc37a289a602db6f493dc5818411a7"
 }
 
