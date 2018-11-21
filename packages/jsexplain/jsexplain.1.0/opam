@@ -37,6 +37,6 @@ pin-depends: [
 ]
 url {
  src : "http://jsexplain.gforge.inria.fr/jsexplain-1.0.tar.gz"
- checksum: "md5=eee6068ad879d3b411941d3b932e1231"
+ checksum: "md5=797b9a6cf9c033147f4d2625bbb40286"
 }
 
