@@ -32,7 +32,7 @@ depends: [
   "ocaml" {>= "4.04.0" &  < "4.05"}
 ]
 url {
- src : "http://jsexplain.gforge.inria.fr/fjs_of_fml-1.0.tar.gz"
+ src : "http://jsexplain.gforge.inria.fr/opam/fjs_of_fml/fjs_of_fml-1.0.tar.gz"
  checksum: "md5=7090ce3fdd7516f29c28469f6e0d9637"
 }
 
